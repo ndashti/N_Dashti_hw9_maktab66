@@ -1,0 +1,313 @@
+*,
+*::after,
+*::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.myline{
+	width:3rem;
+	height:2px;
+	background-color:black;
+	margin:0 auto;
+}
+
+.TitleText{
+	font-size:29px;
+	text-align:center;
+	padding-top:95px;
+	line-height:15px;
+	padding-bottom:6px;
+}
+
+.TitleText2{
+	text-align:center;
+	font-size:22px;
+	padding-top:20px;
+	padding-bottom:50px;
+}
+.emptydiv{
+	padding:70px;
+}
+.Element2{
+	background-color:#CCCCCC;
+	height:320px;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	flex-direction:column;
+	transition:0.3s;
+}
+.Element2>i{
+	font-size:60px;
+	margin:0px;
+}
+
+.Element3{
+	height:320px;
+	background-color:#EFEFEF;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	flex-direction:column;
+	transition:0.3s;
+}
+.Element3>i{
+	font-size:60px;
+	margin:0px;
+}
+
+.Element4{
+	background-color:#CCCCCC;
+	height:320px;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	flex-direction:column;
+	transition:0.3s;
+}
+.Element4>i{
+	font-size:60px;
+	margin:0px;
+}
+
+.Element5{
+	height:320px;
+	background-color:#EFEFEF;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	flex-direction:column;
+	transition:0.3s;
+}
+.Element5>i{
+	font-size:60px;
+	margin:0px;
+}
+
+.ElementTitle2{
+	font-size:20px;
+	font-weight:500;
+	padding:10px 0px 10px 0px;
+	margin:0px;
+}
+.ElementText2{
+	font-weight:bold;
+	font-size:30px;
+	margin:0px;
+}
+.Description{
+	text-align:center;
+	font-size:22px;
+	padding-top:20px;
+}
+.Cricle{
+	width:140px;
+	height:140px;
+	background-color:#444444;
+	border-radius:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	margin:0 auto;
+	transition:0.3s;
+}
+.Cricle>i{
+	color:white;
+	font-size:50px;
+}
+.CricleSmall{
+	position:absolute;
+	height:40px;
+	width:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#FFBC00;
+	border-radius:100%;
+	top:0px;
+	right:0px;
+	transition:0.3s;
+}
+.CricleTitle{
+	text-align:center;
+	font-weight:500;
+	font-size:25px;
+	padding-top:30px;
+	line-height:20px;
+}
+.CricleText{
+	text-align:center;
+}
+.CricleText>a{
+	text-decoration:none;
+	color:#FFBC00;
+}
+
+.ArrowRight{
+	font-size:30px;
+	color:silver;
+	position:absolute;
+	left:200px;
+}
+.ArrowRight3{
+	font-size:30px;
+	color:silver;
+	position:absolute;
+	left:200px;
+}
+
+.DisplayText{
+	display:flex;
+	padding:5px 0px 5px 0px;
+	
+}
+
+
+.CheckText{
+	margin:0px!important;
+}
+
+.Description2{
+	font-size:20px;
+}
+
+.LeftCol{
+	padding:50px 50px 40px 50px!important;
+}
+.IconList{
+	list-style:none;
+	display:flex;
+	margin-top:20px;
+}
+.Icon1{
+	width:40px;
+	height:40px;
+	background-color:#444444;
+	margin:5px;
+	border-radius:100%;
+	color:white;
+	text-align:center;
+	padding-top:7px;
+	transition:0.3s;
+}
+
+.RightCol{
+	padding:0px!important;
+}
+.RowCenter{
+	align-items:center!important;
+}
+.Image{
+	width:100%;
+}
+.RowEnd{
+	background-color:#232323;
+}
+.ColEnd{
+	display:flex;
+	justify-content:center;
+}
+.EndLink{
+	text-align:center;
+	color:silver;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.Link{
+	text-decoration:none;
+	color:#ffbc00;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+.IconList2{
+	display:flex;
+	list-style:none;
+	justify-content:center;
+	margin-top:32px;
+	margin-bottom:32px;
+}
+.Icon2{
+	width:40px;
+	height:40px;
+	background-color:#232323;
+	margin:5px;
+	border-radius:100%;
+	border:2px solid white;
+	color:white;
+	text-align:center;
+	padding-top:7px;
+	transition:0.3s;
+}
+
+.BackColor{
+	background-color: #ccc;
+}
+
+@media only screen and (max-width: 767px){
+	
+	.ArrowRight{
+		display:none;
+	}
+	.ArrowRight3{
+		display:none;
+	}
+	.pb-3{
+		text-align:center;
+		padding:10px 0px 10px 0px;
+	}
+
+	.IconList{
+		display:flex;
+		justify-content:center;
+	}
+	.EndLink{
+		text-align:center;
+		margin-top:40px;
+		margin-bottom:0px;
+	}
+	.Link{
+		margin-top:40px;
+		margin-bottom:0px;
+	}
+
+}
+@media only screen and (max-width: 770px){
+	
+	.Title{
+		display:flex;
+		justify-content:center;
+	}
+
+}
+@media only screen and (max-width: 990px){
+	
+	.ArrowRight{
+		left:240px;
+	}
+	.ArrowRight3{
+		display:none;
+	}
+
+}
+
+.UnderLine{
+	display:none;
+}
+
+@media only screen and (max-width: 1200px){
+	
+.ArrowRight{
+	left:180px;
+}
+.ArrowRight3{
+	left:180px;
+}
+}

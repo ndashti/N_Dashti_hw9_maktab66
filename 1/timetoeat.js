@@ -7,7 +7,7 @@ function setDateTime(time) {
     const minutes = +time.substring(index + 1, index2);
 
     const mer = time.substring(index2 + 1, time.length);
-    if (mer == "p.m."){
+    if (mer === "p.m." && hours !== 12){
         hours = hours + 12;
     }
 
@@ -32,7 +32,6 @@ const timeToEat = (currnetTime) => {
         }
     });
 
-
     let key = Object.keys(selectedDate).reduce((key, v) => selectedDate[v] < selectedDate[key] ? v : key);
     const hour = Math.floor(selectedDate[key] / 60);
     const minute = selectedDate[key] - (hour * 60)
@@ -40,6 +39,11 @@ const timeToEat = (currnetTime) => {
     return [hour, minute];
 
 }
+
+console.log(timeToEat('2:00 p.m.'));
+console.log(timeToEat('5:50 a.m.'));
+console.log(timeToEat('7:50 a.m.'));
+console.log(timeToEat('3:10 p.m.'));
 
 
 // function timeToEat(myDate){
@@ -66,8 +70,3 @@ const timeToEat = (currnetTime) => {
 //     })
 //     return res  
 // }
-
-console.log(timeToEat("5:50 a.m."))  //1:10
-console.log(timeToEat("2:20 p.m."))  //4:40
-console.log(timeToEat("6:00 p.m."))  //1
-console.log(timeToEat("9:10 p.m."))  //9:50
